@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    width:680px;
+    height:750px;
+    border: 2px dashed black;
+    
+    background-repeat: calc(2);
+
+}
+img{
+    cursor: pointer;
+    width:300px;
+    position: relative;
+    right:200px;
+    top:200px;
+    
+    
+ 
+}
+.but1 ,.but2 ,.but2 ,.but3,.but4{
+    position: relative;
+    bottom: 50px;
+    background-color: skyblue;
+    color: white;
+    border-radius: 29%;
+    border-color: azure ;
+}
+.but2{
+    position: relative;
+    left: 20px;
+}
+.but3{
+    position: relative;
+    left: 40px;
+}
+.but4{
+    position: relative;
+    left: 60px;
+}
+.but1{
+    transition: all 5s;
+}
+.container > .but1:hover ~ img{
+    transform: rotatez(180deg);
+}
+.but2{
+    animation-duration: 2s;
+    transition: all 5s;
+}
+.container > .but2:hover ~ img{
+    transform: translatex(200px)
+}
+
+.but3{
+    transition: all 5s;
+}
+.container > .but3:hover ~ img{
+    transform: scale(3)
+}
+.but4{
+    transition: all 5s;
+}
+.container > .but4:hover ~ img{
+    transform: skew(120deg);
+}
+@media screen and (max-width:320px){
+    body{
+        width: 100%;
+        height: 50%;
+    }
+    
+}
